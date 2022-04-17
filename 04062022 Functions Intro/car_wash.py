@@ -4,6 +4,7 @@ def regular_carwash():
     print("Spray water!!!")
     print("Put soap on.")
     print("Rinse")
+#Create a car wash with two options for user. Regular and Premium. Use function. 
 
 
 def premium_carwash():
@@ -15,6 +16,7 @@ def premium_carwash():
     print("Rinse again")
     print("Air dry!")
     print("========= Premium Wash Done =========")
+
 print("Hello, please select your car wash (Regular or Premium): ")
 user_selection = input()
 
