@@ -10,3 +10,8 @@ for i in fruits:
 # 
 for number in range(10):    
     print(number)
+
+
+# create a list of numbers using range() function and print 'Hello' using for loop.
+for number in range(5):    
+    print('Hello')
