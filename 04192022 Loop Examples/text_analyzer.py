@@ -3,10 +3,6 @@
 # From given piece of text: 
 # count the number of chars. 
 
-
-from posixpath import split
-
-
 text = '''et qui proident voluptate excepteur enim Lorem ea id ipsum veniam
  culpa eu anim amet cupidatat ad ad culpa voluptate dolore esse et culpa pariatur
   consequat proident irure id voluptate officia nulla in aliqua est nisi 
@@ -27,5 +23,4 @@ print("Number of words in this text: ")
 # The split() method splits a string into a list. 
 # you can call split() on text and then use len() to figure out the length of the list that you get back
 print(len(text.split()))
-
 print('--------------------------------')
