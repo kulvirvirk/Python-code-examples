@@ -3,3 +3,6 @@
 
 def bark():
     print("woof woof!")
+
+# call the function
+bark()
