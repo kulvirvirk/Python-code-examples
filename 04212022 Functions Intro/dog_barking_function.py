@@ -4,5 +4,11 @@
 def bark():
     print("woof woof!")
 
-# call the function
+# Driver code to call a function
 bark()
+
+
+# now call the bark() function 10 time using a for loop
+
+for number in range(10):
+    bark()
