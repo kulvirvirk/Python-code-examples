@@ -12,15 +12,17 @@ user_name = input("Enter you name to begin the :")
 print(f"Hello {user_name}, let's play... \n\n`````````Random Number Guessing Game`````````\n")
 
 random_number = generate_random_num()   # get a random number from generate_random_num() function.
-guess_counter = 0
+guess_counter = 1
 
-
-print(random_number)
 # get uers's input
 user_num_entry = int(input("I have generated a random number between 1 - 100, take a guess:"))
 
 while user_num_entry != random_number:
-    user_num_entry = int(input("Nope, try another number:"))
+    if(user_num_entry < random_number):
+        print("Go higher.")
+    elif (user_num_entry > random_number):
+        print("Go lower.")
+    user_num_entry = int(input("Try another number:"))
     guess_counter = guess_counter + 1
 
-print (f"Congratulation! You got it {user_name}, it took you {guess_counter} tries.")
+print (f"Congratulation! You got it {user_name}, it took you {guess_counter} tries.\n")
