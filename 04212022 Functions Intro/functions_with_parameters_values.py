@@ -25,7 +25,8 @@ print('--------------------------------')
 def convert_string_to_uppercase(some_text):
     return some_text.upper()
 
-uppercase_string = convert_string_to_uppercase("test string")
+uppercase_string = convert_string_to_uppercase("Test String")
 print(f"Converted string: {uppercase_string}")
 
-
+for number in range(5):
+    print(f"Converted string: {uppercase_string}")
