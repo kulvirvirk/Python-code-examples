@@ -3,14 +3,17 @@
 
 # fuction to generate the random number
 import random
+import time
 
 def generate_random_num():
     return random.randint(1, 100)
 
 # get user's name
-user_name = input("Enter you name to begin the :")
+user_name = input("Enter you name to begin:")
 print(f"Hello {user_name}, let's play... \n\n`````````Random Number Guessing Game`````````\n")
 
+print("Generating a random number...\n")
+time.sleep(3)
 random_number = generate_random_num()   # get a random number from generate_random_num() function.
 guess_counter = 1
 
