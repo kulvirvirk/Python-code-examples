@@ -8,5 +8,9 @@ print(response)     # print the response from the endpoint
 # (if the result was written in JSON format, if not it raises an error). 
 # Python requests are generally used to fetch the content from a particular resource URI.
 
-print(response.json()['items']) 
+#print(response.json()['items']) 
 
+
+# use for loop on dictionary to access JSON > items > title
+for questions in (response.json()['items']):
+    print (questions['title'])
