@@ -1,5 +1,5 @@
 
-
+# Json object
 people_string = '''
 {
     "people":[
