@@ -1,5 +1,8 @@
+import json
 
-# Json object
+# Json object which has a key of 'people' and value of 'people' is array of more objects. 
+# We have two objects here, and each object has a key called name, phone, email and emp_number.
+# each key of object has further values paired with them. E.g. "name":"John"
 people_string = '''
 {
     "people":[
@@ -18,4 +21,9 @@ people_string = '''
     ]
 }
 '''
+
+# load json into python object. loads() funciton
+data = json.loads(people_string)
+print(data) 
+
 
