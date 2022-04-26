@@ -23,4 +23,3 @@ for questions in (response.json()['items']):
         print (questions['title'])
     else:
         print("Skipped!")
-
