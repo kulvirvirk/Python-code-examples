@@ -12,5 +12,15 @@ print(response)     # print the response from the endpoint
 
 
 # use for loop on dictionary to access JSON > items > title
+# for questions in (response.json()['items']):
+#     print (questions['title'])
+
+
+# use a if else statement to show only questions that are answered already. 
+# hint - you can use "is_answered" true/false value for the check. 
 for questions in (response.json()['items']):
-    print (questions['title'])
+    if questions['is_answered'] == True:
+        print (questions['title'])
+    else:
+        print("Skipped!")
+
