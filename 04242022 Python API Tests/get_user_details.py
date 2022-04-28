@@ -13,10 +13,13 @@ for record in res.json():
         print("skipped!")
 
 
-get all the users and 
-get the emails with .io extension 
 
+#requirements provided: 
+'''get all the users and 
+get the emails with .io extension 
 https://gorest.co.in/public/v2/users/100
+'''
+
 
 
 [
