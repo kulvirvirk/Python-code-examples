@@ -10,10 +10,9 @@ print(response)     # print the response from the endpoint
 
 #print(response.json()['items']) 
 
-
 # use for loop on dictionary to access JSON > items > title
-# for questions in (response.json()['items']):
-#     print (questions['title'])
+for questions in (response.json()['items']):
+    print (questions['title'])
 
 
 # use a if else statement to show only questions that are answered already. 
