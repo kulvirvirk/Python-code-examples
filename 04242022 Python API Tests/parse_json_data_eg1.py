@@ -23,7 +23,7 @@ people_string = '''
 '''
 
 # load json into python object. loads() funciton
-data = json.loads(people_string)
-print(data) 
-
-
+data = json.loads(people_string)  # json.loads() converts a json to python dictionary. 
+for person in data['people']:
+    print(person)
+    #print(person["name"])      # prints the name of each person 
